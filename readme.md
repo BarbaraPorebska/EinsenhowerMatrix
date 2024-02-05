@@ -285,6 +285,25 @@ __Instance methods__
 
 Write at least 1 NUnit test.
 
+Edge Cases and Boundary
+Handle edge cases and boundaries for both TodoItem and TodoQuarter classes. Consider scenarios such as:
+- adding tasks with past deadlines.
+
+Exception Handling
+Ensure proper exception handling in the TodoQuarter class methods. Ensure that exceptions are thrown under the following conditions:
+- Trying to remove a task at an index that is out of range.
+- Trying to add a task with a null title or a deadline in the past.
+
+Integration Testing
+Implement integration tests that cover the interaction between TodoItem and TodoQuarter classes. Write tests to ensure that:
+- Adding a task to a quarter updates the quarter's list correctly.
+- Removing a task from a quarter updates the quarter's list correctly.
+  
+Exception Handling – unit test
+Implement NUnit tests to ensure proper exception handling in the TodoQuarter class methods. Write tests under the following conditions:
+- Trying to remove a task at an index that is out of range.
+- Trying to access an index in the list that is out of range.
+
 ## Running program
 To run a program just type 
 
